@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>My Catalog</b></h3>
-
+  <h1><b>Blog App</b></h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -26,18 +25,24 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My Catalog] <a name="about-project"></a>
+# 📖 [Blog App] <a name="about-project"></a>
 
-**[My Catalog]** is a console app that will help you to keep a record of different types of things you own: books, music albums, and games. All data is preserved
+**[Blog App]** is a classic example of a blog website. It is a fully functional website that show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>Techs</summary>
   <ul>
-    <li><a href="https://ruby.org/">Ruby</a></li>
+    <li><a href="https://guides.rubyonrails.org/index.html">Ruby On Rails</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgresSQL</a></li>
   </ul>
 </details>
 
@@ -45,15 +50,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **List all books**
-- **List all music albums**
-- **List of games**
-- **List all genres**
-- **List all labels**
-- **List all authors**
-- **Add a book**
-- **Add a music album**
-- **Add a game**
+- **List of posts**
+- **Adding comments and liking posts**
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -62,8 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Video Presentation](https://youtu.be/uI7x7itNxyg)
-
+- Live Demo coming soon..
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -84,7 +82,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/K0ppai/My-Catalog.git
+  git clone https://github.com/K0ppai/Blog_Web.git
 ```
 
 
@@ -95,31 +93,29 @@ Install this project with:
 Example command:
 
 ```sh
-  cd my-project
-  gem install
+  cd Blog_Web
+  bundle install
+```
+### Usage
+
+To run this project:
+
+```ruby
+   bin/rails server
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Batool Fatima**
-
-- GitHub: [@githubhandle](https://github.com/batoolfatima2135)
-- Twitter: [@twitterhandle](https://twitter.com/batool2135)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/batool-fatima-515531196/)
 
 👤 **Paing Soe Thu**
 - GitHub: [@K0ppai](https://github.com/K0ppai)
 - Twitter: [@_koppai_](https://twitter.com/_koppai_)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/paingsoe-thu)
 
-👤 **Sungabanja Thawethe**
-- GitHub: [@Sunga12](https://github.com/sunga12)
-- LinkedIn: [Sungabanja Thawethe](https://linkedin.com/in/sungabanja-thawethe)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +124,6 @@ Example command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Web interface**
-- [ ] **Database Connection**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,7 +133,7 @@ Example command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/K0ppai/Blog_Web/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +142,7 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 
-If you like this project kindly support and give it a star
+If you like this project kindly support and don't forget to give it a star.😉
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +150,7 @@ If you like this project kindly support and give it a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank microverse for giving us chance to work on this project
+I would like to thank microverse for giving me the chance to work on this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,7 +159,7 @@ We would like to thank microverse for giving us chance to work on this project
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/K0ppai/Blog_Web/blob/develop/LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
