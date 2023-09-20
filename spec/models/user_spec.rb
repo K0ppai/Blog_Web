@@ -18,7 +18,7 @@ RSpec.describe User, type: :model do
   end
 
   context "#recent_posts" do
-    it "description" do
+    it "should return an array of length 3" do
       4.times { Post.create(author: @user, title: "Hello", text: "This is my first post") }
       result = @user.recent_posts
       expect(result.length).to be 3
