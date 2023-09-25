@@ -24,11 +24,11 @@ RSpec.describe 'Users', type: :request do
       get '/users/:id'
     end
 
-    it 'returns http success' do
+    it 'should returns http success' do
       expect(response.status).to eq(200)
     end
 
-    it 'render the correct template' do
+    it 'should render the correct template' do
       expect(response).to render_template(:show)
     end
 
