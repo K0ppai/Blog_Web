@@ -1,9 +1,11 @@
+<%= render partial: 'user', locals: { user: @user } %>
+<div class="p-2 border mb-4">
+  <h1>Bio</h1>
+  <p class="mt-4"><%= @user.bio %></p>
+</div>
 <ul>
-  <% unless @posts.empty? %>
-    <% @posts.each do |post,i| %>
-      <li>Post <%= post %></li>
-    <% end %>
-  <% else %>
-    <span>This user has no posts</span>
-  <% end %>
+  <%= render partial: 'posts/post', collection: @posts %>
 </ul>
+<div class="flex justify-center">
+  <button class="border p-1">See all posts</button>
+</div>

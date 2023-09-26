@@ -1,13 +1,11 @@
-<ul class="m-4">
-  <% @users.each do |user| %>
-    <li class="flex mb-4">
-      <figure>
-        <img class="bg-blue-400 w-4 h-full md:w-20" src="<%= user.photo %>" alt="photo">
-      </figure>
-      <a href="<%= user_path(user.id) %>" class="ml-4 w-full border-2">
-        <p class="text-red-400 text-2xl"><%= user.name %></p>
-        <p class="text-right">Number of posts: <%= user.posts.count %></p>
-      </a>
-    </li>
-  <% end %>
+<ul class="w-full">
+  <li class="flex mb-4">
+    <figure>
+      <img class="bg-blue-400 h-full md:w-20" src="<%= user.photo %>" alt="photo">
+    </figure>
+    <a href="<%= user_path(user.id) %>" class="ml-4 w-full border-2">
+      <p class="text-red-400 text-2xl"><%= user.name %></p>
+      <p class="text-right">Number of posts: <%= user.posts.count %></p>
+    </a>
+  </li>
 </ul>
