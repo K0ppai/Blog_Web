@@ -1,7 +1,9 @@
 <li class="p-2 border">
-  <h1><%= post.title %></h1>
-  <p><%= post.text %></p>
-  <p class="text-right">Comments:<%= post.comments_counter %>,Likes: <%= post.likes_counter %></p>
+  <a href="<%= post_of_user_path(user_id:post.author_id, id:post.id) %>">
+    <h1><%= post.title %></h1>
+    <p><%= post.text %></p>
+    <p class="text-right">Comments:<%= post.comments_counter %>,Likes: <%= post.likes_counter %></p>
+  </a>
   <% if comments.present? %>
     <ul>
       <% unless comments.empty? %>
