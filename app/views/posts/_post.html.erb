@@ -1,4 +1,14 @@
-<li class="p-2 border mb-2">
+<li class="p-2 border">
   <h1><%= post.title %></h1>
   <p><%= post.text %></p>
+  <p class="text-right">Comments:<%= post.comments_counter %>,Likes: <%= post.likes_counter %></p>
+  <% if comments.present? %>
+    <ul>
+      <% unless comments.empty? %>
+        <% comments.each do |comment| %>
+          <%= render partial: 'comment', locals: { comment: comment } %>
+        <% end %>
+      <% end %>
+    </ul>
+  <% end %>
 </li>
