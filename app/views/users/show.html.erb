@@ -1,1 +1,9 @@
-<h1>Show params</h1>
+<ul>
+  <% unless @posts.empty? %>
+    <% @posts.each do |post,i| %>
+      <li>Post <%= post %></li>
+    <% end %>
+  <% else %>
+    <span>This user has no posts</span>
+  <% end %>
+</ul>
