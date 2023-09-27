@@ -11,4 +11,8 @@ class PostsController < ApplicationController
       params[:id]
     )
   end
+
+  def new
+    @post = Post.new
+  end
 end

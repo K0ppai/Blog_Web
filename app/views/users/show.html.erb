@@ -3,9 +3,10 @@
   <h1>Bio</h1>
   <p class="mt-4"><%= @user.bio %></p>
 </div>
+<a href="<%= new_user_post_path(user_id:@user.id) %>" class="mx-auto">Make a new post</a>
 <ul class="flex flex-col gap-y-2 mb-2">
   <%= render partial: 'posts/post', collection: @posts, locals: { comments: [] } %>
 </ul>
 <div class="flex justify-center">
-  <a href="<%= posts_of_user_path(user_id: @user.id) %>" class="border p-1">See all posts</a>
+  <a href="<%= user_posts_path(@user) %>" class="border p-1">See all posts</a>
 </div>
