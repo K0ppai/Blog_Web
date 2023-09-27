@@ -1,1 +1,12 @@
-<h1>Show post id</h1>
+<div>
+  <h1>"<%= @post.title %>" by <%= @post.author.name %></h1>
+  <p class="text-right">Comments:<%= @post.comments_counter %>,Likes: <%= @post.likes_counter %></p>
+  <p><%= @post.text %></p>
+</div>
+<ul>
+  <% unless @post.comments.empty? %>
+    <%= render partial: 'comment', collection: @post.comments %>
+  <% else %>
+    <span>No comments yet.</span>
+  <% end %>
+</ul>
