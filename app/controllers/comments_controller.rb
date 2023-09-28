@@ -1,8 +1,4 @@
 class CommentsController < ApplicationController
-  def new
-    @comment = Comment.new
-  end
-
   def create
     comment = Comment.new(params.require(:comment).permit(:text))
     post = Post.find(params[:post_id])
@@ -13,7 +9,8 @@ class CommentsController < ApplicationController
     if comment.save
       redirect_to user_post_path(user_id: user, id: post)
     else
-      render :new
+      flash[:alert] = 'Please type something before adding new comment'
+      redirect_to user_post_path(user_id: user, id: post)
     end
   end
 end

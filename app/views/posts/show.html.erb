@@ -6,10 +6,11 @@
   <p class="border p-2"><%= @post.text %></p>
 </div>
 <ul>
-  <%= link_to 'Add a new comment', new_user_post_comment_path(user_id: @post.author, post_id: @post) %>
   <% unless @post.comments.empty? %>
     <%= render partial: 'comment', collection: @post.comments %>
   <% else %>
     <p>No comments yet.</p>
   <% end %>
 </ul>
+<%= render 'comments/new' %>
+

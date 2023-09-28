@@ -10,6 +10,7 @@ class PostsController < ApplicationController
     @post = Post.find(
       params[:id]
     )
+    @comment = Comment.new
   end
 
   def new
