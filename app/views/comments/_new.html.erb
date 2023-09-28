@@ -1,12 +1,14 @@
-<h1>Add a new comment</h1>
-<%= form_with model:@comment, url:user_post_comments_path(post_id: @post) do |f| %>
-  <div class="flex flex-col">
-    <div>
-      <%= f.text_field :text, placeholder: 'hii' %>
-      <%= f.submit "Comment"%>
+<section>
+  <h1>Add a new comment</h1>
+  <%= form_with model:@comment, url:user_post_comments_path(post_id: @post) do |f| %>
+    <div class="flex flex-col">
+      <div>
+        <%= f.text_field :text, placeholder: 'hii' %>
+        <%= f.submit "Comment"%>
+      </div>
     </div>
-  </div>
-<% end %>
-<% if flash[:alert].present? %>
-  <%= flash[:alert] %>
-<% end %>
+  <% end %>
+  <% if flash[:alert].present? %>
+    <%= flash[:alert] %>
+  <% end %>
+</section>

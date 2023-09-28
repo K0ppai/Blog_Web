@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'likes/_new'
   root 'users#index'
 
   resources :users do
