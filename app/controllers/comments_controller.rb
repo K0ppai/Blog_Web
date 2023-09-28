@@ -6,11 +6,7 @@ class CommentsController < ApplicationController
     comment.author = current_user
     comment.post = post
 
-    if comment.save
-      redirect_to user_post_path(user_id: user, id: post)
-    else
-      flash[:alert] = 'Please type something before adding new comment'
-      redirect_to user_post_path(user_id: user, id: post)
-    end
+    flash[:alert] = 'Please type something before adding new comment' unless comment.save
+    redirect_to user_post_path(user_id: user, id: post)
   end
 end

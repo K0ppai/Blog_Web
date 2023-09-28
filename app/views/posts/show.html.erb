@@ -13,6 +13,6 @@
   <% end %>
 </ul>
 <div class="flex justify-around">
-  <%= render 'likes/new' %>
+  <%= render 'likes/new', post: @post, like: @like %>
   <%= render 'comments/new' %>
 </div>
