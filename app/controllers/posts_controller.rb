@@ -20,10 +20,11 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(params.require(:post).permit(:title, :text))
-    @post.author = current_user
+    author = User.find(params[:user_id])
+    @post.author = author
 
     if @post.save
-      redirect_to user_path(id: @post.author_id)
+      redirect_to user_path(id: author)
     else
       render :new
     end
