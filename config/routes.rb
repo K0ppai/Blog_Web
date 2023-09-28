@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
-  get 'likes/_new'
   root 'users#index'
 
-  resources :users do
-    resources :posts do
-      resources :comments
-      resources :likes
+  resources :users, only: %i[index show] do
+    resources :posts, only: %i[index show new create] do
+      resources :comments, only: %i[create]
+      resources :likes, only: %i[create]
     end
   end
 end
