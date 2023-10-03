@@ -6,7 +6,7 @@ RSpec.describe 'users/index.html.erb', type: :feature do
     @post = Post.create(author: @user, title: 'Rails set up', text: 'This is how')
     visit root_path
   end
-  
+
   scenario 'I can see the username' do
     expect(page).to have_content(@user.name)
   end
