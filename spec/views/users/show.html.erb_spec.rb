@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "users/index.html.erb", type: :feature do
+RSpec.describe "users/show.html.erb", type: :feature do
   before :each do
     @user = User.create(name: "Koppai", photo: "https://picsum.photos/id/23/200", bio: "Micronaut")
     @post1 = Post.create(author: @user, title: "Post 1", text: "This is how")
