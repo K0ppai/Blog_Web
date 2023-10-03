@@ -11,6 +11,7 @@
 </ul>
 <% if @posts.any? %>
   <div class="flex justify-center">
-    <a href="<%= user_posts_path(@user) %>" class="border p-1">See all posts</a>
+    <a href="<%= user_posts_path(@user) %>" class="border p-1" id="all-posts-btn"
+>See all posts</a>
   </div>
 <% end %>
