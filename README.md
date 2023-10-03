@@ -116,6 +116,10 @@ To run this project:
 - Twitter: [@_koppai_](https://twitter.com/_koppai_)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/paingsoe-thu)
 
+👤 **Adeyemi Dada**
+- GitHub: [@yemidada](https://github.com/yemidada)
+- Twitter: [@nairareport](https://twitter.com/nairareport)
+- LinkedIn: [yemidada](https://linkedin.com/in/yemidada)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
