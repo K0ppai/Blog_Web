@@ -12,6 +12,9 @@
   </head>
   <body>
     <main class="p-4 w-screen">
+      <% if user_signed_in? %>
+        <%= link_to 'SignOut', sign_out_path %>
+      <% end %>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
       <%= yield %>
