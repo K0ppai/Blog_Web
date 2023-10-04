@@ -1,9 +1,9 @@
 <div>
   <div class="border p-2">
-    <div>
+    <div class="flex justify-between">
       <h1>"<%= @post.title %>" by <%= @post.author.name %></h1>
-      <% if can? :delete, @post %>
-        <%= link_to 'Delete', user_post_path(user_id: @post.author, id: @post), method: :delete %>
+      <% if can? :destroy, @post %>
+        <%= button_to 'Delete', user_post_path(user_id: @post.author, id: @post), method: :delete %>
       <% end %>
     </div>
     <p class="text-right">Comments:<%= @post.comments_counter %>,Likes: <%= @post.likes_counter %></p>
