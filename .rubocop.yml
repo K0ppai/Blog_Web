@@ -19,7 +19,7 @@ Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   IgnoredMethods: ['describe']
-  Max: 50
+  Max: 100
 
 
 Style/Documentation:
