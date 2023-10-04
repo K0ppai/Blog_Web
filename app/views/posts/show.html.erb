@@ -1,6 +1,11 @@
 <div>
   <div class="border p-2">
-    <h1>"<%= @post.title %>" by <%= @post.author.name %></h1>
+    <div>
+      <h1>"<%= @post.title %>" by <%= @post.author.name %></h1>
+      <% if can? :delete, @post %>
+        <%= link_to 'Delete', user_post_path(user_id: @post.author, id: @post), method: :delete %>
+      <% end %>
+    </div>
     <p class="text-right">Comments:<%= @post.comments_counter %>,Likes: <%= @post.likes_counter %></p>
   </div>
   <p class="border p-2"><%= @post.text %></p>
