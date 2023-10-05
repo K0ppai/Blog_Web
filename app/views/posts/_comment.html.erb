@@ -1,4 +1,9 @@
-<li class="flex">
-  <span><%= comment.author.name %>: </span>
-  <p class="ml-1"><%= comment.text %></p>
+<li class="flex justify-between">
+  <div class="flex">
+    <span><%= comment.author.name %>: </span>
+    <p class="ml-1"><%= comment.text %></p>
+  </div>
+  <% if can? :destroy, comment %>
+    <%= button_to 'Delete', user_post_comment_path(user_id: comment.post.author,post_id:comment.post,id: comment), method: :delete %>
+  <% end %>
 </li>
