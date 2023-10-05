@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'users#index'
+  root "users#index"
 
   resources :users, only: %i[index show] do
     resources :posts, only: %i[index show new create destroy] do
@@ -9,5 +9,11 @@ Rails.application.routes.draw do
     end
   end
 
-  get '/sign_out', to: 'users#sign_out_session', as: 'sign_out'
+  namespace :api do
+    namespace :v1 do
+      resources :posts
+    end
+  end
+
+  get "/sign_out", to: "users#sign_out_session", as: "sign_out"
 end
