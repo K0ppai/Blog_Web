@@ -13,7 +13,7 @@
   <body>
     <main class="p-4 w-screen">
       <% if user_signed_in? %>
-        <%= link_to 'SignOut', sign_out_path %>
+        <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
       <% end %>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
